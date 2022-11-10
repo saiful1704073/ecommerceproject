@@ -9,6 +9,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatButtonModule} from '@angular/material/button';
+import { ProductService } from './product.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import {MatButtonModule} from '@angular/material/button';
     
     
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
