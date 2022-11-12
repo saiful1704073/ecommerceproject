@@ -10,11 +10,15 @@ import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatButtonModule} from '@angular/material/button';
 import { ProductService } from './product.service';
+import { ProductcreateComponent } from './productcreate/productcreate.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponent
+    routingComponent,
+    ProductcreateComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,9 @@ import { ProductService } from './product.service';
     MatCardModule,
     MatTableModule,
     MatPaginatorModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    FlexLayoutModule
     
     
   ],
